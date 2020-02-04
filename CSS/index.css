@@ -1,0 +1,437 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Comfortaa', cursive;
+  background: #4F4E51;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Comfortaa', cursive;
+}
+h1 {
+  font-size: 5rem;
+  color: #4F4E51;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.9rem;
+  padding-bottom: 10px;
+  margin: 2% 0;
+}
+@media ( max-width: 500px ) {
+  h3 {
+    margin-top: 3%;
+  }
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  margin: 2% 0;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media ( max-width: 500px ) {
+  .container {
+    width: 95%;
+  }
+}
+.headline {
+  display: flex;
+  justify-content: space-between;
+  background: #00C4EE;
+  padding: 1%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto;
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .headline .title {
+    text-align: center;
+  }
+}
+.headline .navigation {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+@media ( max-width: 500px ) {
+  .headline .navigation {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+.headline .navigation a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #4F4E51;
+}
+.signupbuttons {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  margin: 3% auto;
+}
+.signupbuttons button {
+  width: 30%;
+  height: 40px;
+  background: #008396;
+  color: white;
+  border: solid, 2px, #00C4EE;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  .signupbuttons button {
+    width: 50%;
+  }
+}
+.signupbuttons button:hover {
+  background: lightblue;
+  color: #4F4E51;
+}
+header {
+  text-align: center;
+}
+header h3 {
+  font-size: 2rem;
+}
+header img {
+  height: 40vh;
+  width: 100%;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  header img {
+    display: none;
+  }
+}
+.services {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .services {
+    flex-direction: column;
+  }
+}
+.services .checkin {
+  width: 30%;
+}
+@media ( max-width: 500px ) {
+  .services .checkin {
+    width: 100%;
+  }
+}
+.services .checkin img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  .services .checkin img {
+    height: 40vh;
+  }
+}
+.services .gate {
+  width: 30%;
+}
+@media ( max-width: 500px ) {
+  .services .gate {
+    width: 100%;
+  }
+}
+.services .gate img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  .services .gate img {
+    height: 40vh;
+  }
+}
+.services .luggage {
+  width: 30%;
+}
+@media ( max-width: 500px ) {
+  .services .luggage {
+    width: 100%;
+  }
+}
+.services .luggage img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  .services .luggage img {
+    height: 40vh;
+  }
+}
+.teamlead {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 20px auto;
+}
+@media ( max-width: 500px ) {
+  .teamlead {
+    width: 90%;
+    margin-top: 1%;
+  }
+}
+.teamlead img {
+  border-radius: 5px;
+}
+.teamlead p {
+  margin: 10px 0;
+}
+.parent1 {
+  display: flex;
+  justify-content: space-around;
+}
+@media ( max-width: 500px ) {
+  .parent1 {
+    flex-direction: column;
+  }
+}
+.parent1 .christina {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 20px auto;
+}
+@media ( max-width: 500px ) {
+  .parent1 .christina {
+    width: 90%;
+    margin-top: 1%;
+  }
+}
+.parent1 .christina img {
+  border-radius: 5px;
+  height: 45vh;
+}
+.parent1 .christina p {
+  margin: 10px 0;
+}
+.parent1 .adrian {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 20px auto;
+}
+@media ( max-width: 500px ) {
+  .parent1 .adrian {
+    width: 90%;
+    margin-top: 1%;
+  }
+}
+.parent1 .adrian img {
+  border-radius: 5px;
+  height: 45vh;
+}
+.parent1 .adrian p {
+  margin: 10px 0;
+}
+.parent2 {
+  display: flex;
+  justify-content: space-around;
+}
+@media ( max-width: 500px ) {
+  .parent2 {
+    flex-direction: column;
+  }
+}
+.parent2 .cristina {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 20px auto;
+}
+@media ( max-width: 500px ) {
+  .parent2 .cristina {
+    width: 90%;
+    margin-top: 1%;
+  }
+}
+.parent2 .cristina img {
+  border-radius: 5px;
+  height: 45vh;
+}
+.parent2 .cristina p {
+  margin: 10px 0;
+}
+.parent2 .william {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 20px auto;
+}
+@media ( max-width: 500px ) {
+  .parent2 .william {
+    width: 90%;
+    margin-top: 1%;
+  }
+}
+.parent2 .william img {
+  border-radius: 5px;
+  height: 45vh;
+}
+.parent2 .william p {
+  margin: 10px 0;
+}

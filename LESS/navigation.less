@@ -1,0 +1,42 @@
+.headline {
+    display: flex;
+    justify-content: space-between;
+    background: #00C4EE;
+    padding: 1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        padding: 0 auto;
+        width: 100%;
+    }
+
+    .title {
+        @media @phone{
+            text-align: center;
+        }
+    }
+
+    .navigation{
+        display:flex;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center; 
+
+        @media @phone{
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            color: #4F4E51;
+        }
+    }
+}
+
+
+
