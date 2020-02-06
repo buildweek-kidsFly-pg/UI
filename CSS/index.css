@@ -184,7 +184,8 @@ img {
 }
 .headline {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background: #00C4EE;
   padding: 1%;
   border-bottom-left-radius: 5px;
@@ -198,9 +199,20 @@ img {
     width: 100%;
   }
 }
+.headline .logo {
+  width: 6%;
+}
+@media ( max-width: 500px ) {
+  .headline .logo {
+    width: 12%;
+  }
+}
+.headline .title {
+  margin-right: 38%;
+}
 @media ( max-width: 500px ) {
   .headline .title {
-    text-align: center;
+    display: none;
   }
 }
 .headline .navigation {
@@ -322,6 +334,20 @@ header img {
   .services .luggage img {
     height: 40vh;
   }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00C4EE;
+  margin-top: 3%;
+  border-radius: 5px;
+  max-width: 100%;
+}
+footer p {
+  font-size: 1rem;
+  padding: 1%;
+  color: #4F4E51;
 }
 .teamlead {
   display: flex;
