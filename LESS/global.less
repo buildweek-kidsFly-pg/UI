@@ -63,3 +63,21 @@ img {
     }
   }
 
+  button{
+    width: 30%;
+    height: 40px;
+    background: #008396;
+    color: @color;
+    border: solid, 2px, #00C4EE;
+    border-radius: 5px;
+    
+    @media @phone{
+    width: 50%;
+    }
+
+    &:hover{
+    background: lightblue;
+    color: @color;
+    }   
+}
+

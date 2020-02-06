@@ -3,23 +3,35 @@
     justify-content: space-around;
     width: 55%;
     margin: 3% auto;
-   
-    button{
+
+    @media @phone{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .button{
         width: 30%;
         height: 40px;
+        
+
+        button{
+        width: 100%;
         background: #008396;
-        color: @color;
-        border: solid, 2px, #00C4EE;
+        color: white;
+        font-size:1.6rem;
+        border:solid 2px #00C4EE;
         border-radius: 5px;
+        
+        
+            @media @phone{
+            width: 100%;
+            }
 
-        @media @phone{
-            width: 50%;
-        }
-
-        &:hover{
+            &:hover{
             background: lightblue;
-            color: @color;
-        }
+            color: white;
+           } 
+        }  
     }
 }
 

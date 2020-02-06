@@ -182,6 +182,23 @@ img {
     width: 95%;
   }
 }
+button {
+  width: 30%;
+  height: 40px;
+  background: #008396;
+  color: black;
+  border: solid, 2px, #00C4EE;
+  border-radius: 5px;
+}
+@media ( max-width: 500px ) {
+  button {
+    width: 50%;
+  }
+}
+button:hover {
+  background: lightblue;
+  color: black;
+}
 .headline {
   display: flex;
   justify-content: center;
@@ -239,22 +256,32 @@ img {
   width: 55%;
   margin: 3% auto;
 }
-.signupbuttons button {
+@media ( max-width: 500px ) {
+  .signupbuttons {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.signupbuttons .button {
   width: 30%;
   height: 40px;
+}
+.signupbuttons .button button {
+  width: 100%;
   background: #008396;
-  color: black;
-  border: solid, 2px, #00C4EE;
+  color: white;
+  font-size: 1.6rem;
+  border: solid 2px #00C4EE;
   border-radius: 5px;
 }
 @media ( max-width: 500px ) {
-  .signupbuttons button {
-    width: 50%;
+  .signupbuttons .button button {
+    width: 100%;
   }
 }
-.signupbuttons button:hover {
+.signupbuttons .button button:hover {
   background: lightblue;
-  color: black;
+  color: white;
 }
 header {
   text-align: center;
