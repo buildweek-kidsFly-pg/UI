@@ -248,7 +248,7 @@ button:hover {
 .headline .navigation a {
   text-decoration: none;
   font-size: 2rem;
-  color: #4F4E51;
+  color:black;;
 }
 .signupbuttons {
   display: flex;
